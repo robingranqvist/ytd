@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>YouTube Thumbnail Downloader</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://use.fontawesome.com/9e46ddf4a0.js"></script>
+        <link rel="icon" href="img/ytd-favi.png" type="image/png">
+    </head>
+    <body>
+        <div class="wrapper">
+            <!-- The BG grid -->
+            <div class="bg-grid"></div>
+            <div class="bg-overlay"></div>
+            <h1 class="h1-finished">Here's your thumbnail</h1>
+
+            <!-- Main wrapper -->
+            <div class="wrapper-box">
+                <div class ="wrapper-head">
+                    <h1 class="main-title">YouTube Thumbnail Downloader</h1>
+                    <img class="brand-img" src="img/rg-logo.svg">
+                </div>
+                
+                <form class="form-wrapper">
+                    <input type="text" name="form-input" autocomplete="off" class="form-input" placeholder="Full YouTube URL">
+                    <div class="radio-btns">
+                        <div class="radio-btn">
+                            <input type="radio" name="quality" value="MAX" id="maxq"><label for="maxq">Max Quality</label>
+                        </div>
+                        <div class="radio-btn">
+                            <input type="radio" name="quality" value="HQ" class="radio-btn" id="hq"><label for="hq">High Quality</label>
+                        </div>
+                        <div class="radio-btn">
+                            <input type="radio" name="quality" value="MQ" class="radio-btn" id="mq"><label for="mq">Medium Quality</label>
+                        </div>
+                        <div class="radio-btn">
+                            <input type="radio" name="quality" value="LQ" class="radio-btn" id="lq"><label for="lq">Low Quality</label>
+                        </div>
+                    </div>
+                    <div class="form-bottom">
+                        <label class="form-label">EX. https://www.youtube.com/watch?v=QZdyMVTAMEA</label>
+                        <button class="form-btn">
+                            Download <i class="fa fa-angle-right"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="js/index.js"></script>
+        <script src="js/grid.js"></script>
+    </body>
+</html>
